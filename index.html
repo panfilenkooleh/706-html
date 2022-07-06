@@ -2,15 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Sample</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Sample</title>
+  <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Hello HTML</h1>
-    <img src="img/bus.jpg" width="200" alt="Bus">
+  <h1>HOW TO GET fm KYIV to VIENNA</h1>
+  <p>You can use a plane, train or bus.
+    Bus is the most available now!</p>
+  <main>
+    <section>
+      <h2>Find Your Route </h2>
+      <!-- TODO: Add link to tickets online -->
+      <p>Click here to book <a target="_blank" href="https://bus.tickets.ua">tickets</a></p>
+      <div>
+        <a href="https://bus.tickets.ua"><img src="img/ticketsonline.jpg" alt="ticketsonline" id="ticketsonline"></a>
+      </div>
+    </section>
+    <section>
+      <h2>Bus Lines:</h2>
+      <h3>(direct connection)</h3>
+      <ul>
+        <li>Flixbus</li>
+        <li>EuroClub</li>
+        <li>Leo Express</li>
+      </ul>
+      <figure>
+        <img src="img/flixbus.jpeg" alt="Flixbus">
+        <figcaption><em><a target="_blank" href="https://www.flixbus.ua">Flixmobility GmbH</a></em></figcaption>
+      </figure>
+      <figure>
+        <img src="img/euroclub.jpg" alt="EuroClub">
+        <figcaption><em><a target="_blank" href="https://eclub.com.ua">EuroClub LLC</a></em></figcaption>
+      </figure>
+      <figure>
+        <img src="img/leoexpress.jpg" alt="Leo Express">
+        <figcaption><em><a target="_blank" href="https://www.leoexpress.com">Leo Express Global a.s.</a></em>
+        </figcaption>
+      </figure>
+      <div></div>
+      <h3>Bus Line <strong>Advantages:</strong></h3>
+      <ol>
+        <li>#</li>
+        <li>#</li>
+        <li>#</li>
+      </ol>
+      <h3>Bus Line <strong>Disadvantages:</strong></h3>
+      <ol>
+        <li>#</li>
+        <li>#</li>
+        <li>#</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Bus Line Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Which bus line will you choose?</legend>
+          <label><input id="flixbus" type="radio" name="busline" value="flixbus" checked> Flixbus</label>
+          <label><input id="euroclub" type="radio" name="busline" value="euroclub"> EuroClub</label>
+          <label><input id="leoexpress" type="radio" name="busline" value="leoexpress"> Leo Express</label>
+        </fieldset>
+        <fieldset>
+          <legend>What is the reason for your choice?</legend>
+          <input id="price" type="checkbox" name="reason" value="price" checked> <label for="price">Price</label>
+          <input id="service" type="checkbox" name="reason" value="lazy"> <label for="service">Service</label>
+          <input id="time" type="checkbox" name="reason" value="energetic"> <label for="time">Time</label>
+        </fieldset>
+        <input type="email" name="youremail" placeholder="your email address" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>
+      No Copyright - <a href="#">Oleg Panfilenko</a>
+    </p>
+  </footer>
 </body>
 
 </html>
